@@ -16,14 +16,15 @@ var ch = char.Parse(Console.ReadLine());
 
 Console.WriteLine();
 
+bool nomatch = true;
+
 foreach (string word in words)
 {
     if (word.Contains(ch))
     {
         Console.WriteLine(word);
-    }
-    else
-    {
-        Console.WriteLine("No match");
+        nomatch = false;
     }
 }
+
+if (nomatch) Console.WriteLine("No match");
