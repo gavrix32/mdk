@@ -25,6 +25,5 @@ foreach (string word in words)
     else
     {
         Console.WriteLine("No match");
-        break;
     }
 }
