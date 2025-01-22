@@ -21,8 +21,10 @@ foreach (string word in words)
     if (word.Contains(ch))
     {
         Console.WriteLine(word);
-    } else
+    }
+    else
     {
         Console.WriteLine("No match");
+        break;
     }
 }
